@@ -10,3 +10,6 @@ build_docker:
 
 run_docker:
 	docker run --rm heitorcarneiro/fullcycle
+
+push_docker:
+	docker push heitorcarneiro/fullcycle
