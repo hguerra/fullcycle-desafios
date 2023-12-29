@@ -1,0 +1,16 @@
+{
+  "name": "fullcycle-desafios",
+  "version": "1.0.0",
+  "description": "Desafios do custo Full Cycle 3.0",
+  "scripts": {
+    "commit": "cz"
+  },
+  "author": "https://github.com/hguerra",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "18.4.3",
+    "@commitlint/config-conventional": "18.4.3",
+    "commitizen": "4.3.0",
+    "husky": "8.0.3"
+  }
+}
