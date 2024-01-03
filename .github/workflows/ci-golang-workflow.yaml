@@ -3,6 +3,10 @@ on:
   pull_request:
     branches:
       - develop
+  push:
+    branches:
+      - main
+
 jobs:
   check-application:
     runs-on: ubuntu-latest
@@ -36,5 +40,5 @@ jobs:
         with:
           context: ./integracao-continua
           file: ./integracao-continua/Dockerfile
-          push: true
+          push: ${{ github.event_name != 'pull_request' }}
           tags: heitorcarneiro/fullcycle-desafios-go-ci:latest
